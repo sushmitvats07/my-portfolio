@@ -11,9 +11,9 @@ Bootstrap(app)
 
 # CONNECT TO DB
 # SQLite database for development
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///portfolio.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///portfolio.db'
 # Switch to PostgreSQL for deployment - this will use sqlite database if run locally
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///portfolio.db")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL", "sqlite:///portfolio.db")
 
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
