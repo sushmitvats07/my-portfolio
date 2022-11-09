@@ -28,7 +28,7 @@ class Project(db.Model):
     img_url = db.Column(db.String(600), nullable=False)
     link = db.Column(db.String(600), nullable=False)
 
-# db.create_all()
+db.create_all()
 
 
 # pass current year to all routes for footer
